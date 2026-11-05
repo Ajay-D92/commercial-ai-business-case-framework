@@ -1,7 +1,5 @@
 # Commercial Intelligence AI Assistant: a business-case framework
 
-[![tests](https://github.com/Ajay-D92/commercial-ai-business-case-framework/actions/workflows/tests.yml/badge.svg)](https://github.com/Ajay-D92/commercial-ai-business-case-framework/actions/workflows/tests.yml)
-
 A worked example of a Phase 1 proof-of-concept business case for an AI assistant that captures and shares the commercial and cross-cultural knowledge held by sales representatives. Written as a template other companies can adapt.
 
 > **About the figures.** This is a framework. Company identifiers have been removed, and operational metrics (deal cycle, follow-up rate, preparation time, inefficiency cost, deal margin) have been replaced with illustrative figures that match the shape of the original data but do not disclose it. The financial model, method and conclusions are unchanged, so the structure can be reused by any company in a similar position.
@@ -19,10 +17,9 @@ A worked example of a Phase 1 proof-of-concept business case for an AI assistant
 
 ## Where to start
 
-1. The executive summary at the top of [business-case.md](business-case.md) (two minutes).
-2. The model in [model/](model): change an input and the figures update.
-3. [CHANGES.md](CHANGES.md): the errors found in the first version and how each was fixed.
-4. The slide deck, then [prep/](prep) for how to get a proposal ready for a decision.
+1. The executive summary at the top of business-case.md (two minutes).
+2. The model in model/: change an input and the figures update.
+3. The slide deck, then prep/ for how to get a proposal ready for a decision.
 
 ## What is here
 
@@ -32,7 +29,6 @@ A worked example of a Phase 1 proof-of-concept business case for an AI assistant
 | [model/financial_model.py](model/financial_model.py) | The financial model in plain Python. Every figure in the business case comes from it |
 | [model/test_financial_model.py](model/test_financial_model.py) and [model/test_document.py](model/test_document.py) | Tests: the model reproduces the figures, and the numbers printed in the document match the model |
 | [prep/](prep) | A readiness plan: a status-marked checklist, the questions a leader is likely to ask, and a baseline template. Open items are marked as open |
-| [CHANGES.md](CHANGES.md) | The inconsistencies found in the first version and how each was fixed |
 | [Dhankar_Ajay_AI_Business_Case_slides.pdf](Dhankar_Ajay_AI_Business_Case_slides.pdf) | The slide deck (23 main + 7 backup slides), previewable on GitHub |
 | [speaker-notes.md](speaker-notes.md) | A corrected talk script |
 
