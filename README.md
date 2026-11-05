@@ -15,11 +15,19 @@ A worked example of a Phase 1 proof-of-concept business case for an AI assistant
 | 3-year cost | €364,000 |
 | Break-even | 25% of the modelled benefit |
 
+## What this shows
+
+- **Numbers that stand up.** Every figure in the document comes from a tested financial model in Python ([model/](model)). A second test reads the document and checks the text matches the model — the two cannot drift apart.
+- **Staged commitment, not a leap.** €15k readiness sprint → €94k pilot → €255k scale, with Day 45 and Day 90 gates. Maximum loss is capped at €109k, not €364k.
+- **Readiness plan that admits what's missing.** The [prep/](prep) folder marks each check as Done, Drafted or Open — including "no sponsor yet" and "AI Owner role not filled". Honest about what still needs to be proven.
+- **Governance and ethics as first-class.** Specific policies with named owners: 1-in-20 hallucination rate pauses the feature, prompt-injection tests in Phase 0, EU AI Act classification confirmed by Legal.
+- **Framework thinking.** Designed to be adapted (see [How to adapt this for your company](#how-to-adapt-this-for-your-company)).
+
 ## Where to start
 
-1. The executive summary at the top of business-case.md (two minutes).
-2. The model in model/: change an input and the figures update.
-3. The slide deck, then prep/ for how to get a proposal ready for a decision.
+1. The executive summary at the top of [business-case.md](business-case.md) (two minutes).
+2. The model in [model/](model): change an input and the figures update.
+3. The slide deck, then [prep/](prep) for how to get a proposal ready for a decision.
 
 ## What is here
 
@@ -36,21 +44,3 @@ A worked example of a Phase 1 proof-of-concept business case for an AI assistant
 
 ```bash
 cd model && python3 financial_model.py && python3 test_financial_model.py && python3 test_document.py
-```
-
-Change an input at the top of `financial_model.py` (for example `calls_per_rep_week` or `ai_owner_cost_per_fte_year`) and the scenarios and stress tests update.
-
-## How to adapt this for your company
-
-1. Replace the illustrative baseline (deal cycle, follow-up rate, prep time, calls per rep per week, inefficiency cost) with your own numbers in `model/financial_model.py`.
-2. Rewrite Section 1.1 of `business-case.md` with your real current state and benchmarks.
-3. Re-run the model. The NPV, IRR, payback and ROI update across the document.
-4. Use [prep/](prep) to pressure-test whether the proposal is ready for a decision.
-
-## What this shows
-
-How to frame a knowledge-capture AI problem for decision-makers, cost it with stated assumptions, limit exposure with staged gates, plan governance and adoption, and check the numbers with code. It is paired with a working build: the [trend discovery agent](https://github.com/Ajay-D92/e-commerce-trend-discovery-agent) shows the same approach applied end-to-end.
-
-## A note on use
-
-This document is shared as a framework for other companies and practitioners to adapt. It is not licensed for resale or republication. The figures are illustrative; do not cite them as benchmarks.
